@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-COMMERCE PRODUCT FILTER</title>
+  <link rel="stylesheet" href="./css/style.css"/>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <a href="#" class="logo">
+        <ion-icon name="fast-food"></ion-icon>
+        SK
+      </a>
+      <div class="box">
+        <div class="cart-count">0</div>
+        <ion-icon name="cart" id="cart-icon"></ion-icon>
+      </div>
+      <div class="cart">
+        <div class="cart-title">Cart Items</div>
+        <div class="cart-content">       
+        </div>
+        <div class="total">
+          <div class="total-title">Total</div>
+          <div class="total-price">Rs</div>
+        </div>
+        <button class="btn-buy" onClick="placeOrder()">Place Order</button>
+        <ion-icon name="close" id="cart-close"></ion-icon>
+      </div>
+    </div>
+  </header>
+
+  <div class="control">
+ 
+    <div class="btn-group">
+      <button class="btn btn-clicked" data-filter="all">All</button>
+      <button class="btn" data-filter="cake">Cake</button>
+      <button class="btn" data-filter="icecream">Ice Cream</button>
+      <button class="btn" data-filter="juice">Juice</button>
+      <button class="btn" data-filter="milkshake">Milkshake</button>
+    </div>
+
+    <input type="text" placeholder="Search Food" id="search">
+  </div>
+
+  <div class="container">
+    <h2 class="title">Choose Your Favour Items</h2>
+
+    <div class="shop-content">
+
+<div class="food-box" data-item="cake">
+<div class="pic"><img src="./images/black forest cake.jpg" class="food-img"></div>
+<h2 class="food-title">Black forest</h2>
+<span class="food-price">Rs.550</span>
+<ion-icon name="cart" class="add-cart"></ion-icon>
+</div>
+
+<div class="food-box" data-item="icecream">
+<div class="pic"><img src="./images/vanilla ice cream.jpg" class="food-img"></div>
+<h2 class="food-title">Vanilla</h2>
+<span class="food-price">Rs.55</span>
+<ion-icon name="cart" class="add-cart"></ion-icon>
+</div>
+
+<div class="food-box" data-item="juice">
+<div class="pic"><img src="./images/orange juice.jpg" class="food-img"></div>
+<h2 class="food-title">Orange</h2>
+<span class="food-price">Rs.50</span>
+<ion-icon name="cart" class="add-cart"></ion-icon>
+</div>
+
+<div class="food-box" data-item="milkshake">
+<div class="pic"><img src="./images/strawberry milkshake.jpg" class="food-img"></div>
+<h2 class="food-title">strawberry Milkshake</h2>
+<span class="food-price">Rs.70</span>
+<ion-icon name="cart" class="add-cart"></ion-icon>
+</div>
+  
+<div class="food-box" data-item="cake">
+<div class="pic"><img src="./images/honey desert cake.jpg" class="food-img"></div>
+<h2 class="food-title">Honey Desert Cake</h2>
+<span class="food-price">Rs.150</span>
+<ion-icon name="cart" class="add-cart"></ion-icon>
+</div>
+
+<div class="food-box" data-item="icecream">
+<div class="pic"><img src="./images/pista ice cream.jpg" class="food-img"></div>
+<h2 class="food-title">Pista</h2>
+<span class="food-price">Rs.75</span>
+<ion-icon name="cart" class="add-cart"></ion-icon>
+</div>
+
+<div class="food-box" data-item="juice">
+<div class="pic"><img src="./images/mango juice.jpg" class="food-img"></div>
+<h2 class="food-title">Mango</h2>
+<span class="food-price">Rs.80</span>
+<ion-icon name="cart" class="add-cart"></ion-icon>
+</div>
+
+<div class="food-box" data-item="milkshake">
+<div class="pic"><img src="./images/coffee milkshake.jpg" class="food-img"></div>
+<h2 class="food-title">Coffee Milkshake</h2>
+<span class="food-price">Rs.70</span>
+<ion-icon name="cart" class="add-cart"></ion-icon>
+</div>
+
+<div class="food-box" data-item="cake">
+<div class="pic"><img src="./images/redvelvat cake.jpg" class="food-img"></div>
+<h2 class="food-title">Red Velvat</h2>
+<span class="food-price">Rs.750</span>
+<ion-icon name="cart" class="add-cart"></ion-icon>
+</div>
+
+<div class="food-box" data-item="icecream">
+<div class="pic"><img src="./images/chocolate ice cream.jpg" class="food-img"></div>
+<h2 class="food-title">Chocolate</h2>
+<span class="food-price">Rs.85</span>
+<ion-icon name="cart" class="add-cart"></ion-icon>
+</div>
+
+<div class="food-box" data-item="juice">
+<div class="pic"><img src="./images/pineapple juice.jpg" class="food-img"></div>
+<h2 class="food-title">Pineapple</h2>
+<span class="food-price">Rs.45</span>
+<ion-icon name="cart" class="add-cart"></ion-icon>
+</div>
+
+<div class="food-box" data-item="milkshake">
+<div class="pic"><img src="./images/blueberry milkshake.jpg" class="food-img"></div>
+<h2 class="food-title">Blueberry Milkshake</h2>
+<span class="food-price">Rs.115</span>
+<ion-icon name="cart" class="add-cart"></ion-icon>
+</div>
+
+<div class="food-box" data-item="cake">
+<div class="pic"><img src="./images/coconut cake.jpg" class="food-img"></div>
+<h2 class="food-title">Coconut Caake</h2>
+<span class="food-price">Rs.450</span>
+<ion-icon name="cart" class="add-cart"></ion-icon>
+</div>
+
+<div class="food-box" data-item="icecream">
+<div class="pic"><img src="./images/strawberry ice cream.jpg" class="food-img"></div>
+<h2 class="food-title">Strawberry Frozone Desert</h2>
+<span class="food-price">Rs.95</span>
+<ion-icon name="cart" class="add-cart"></ion-icon>
+</div>
+
+<div class="food-box" data-item="juice">
+<div class="pic"><img src="./images/pomegranate juice.jpg" class="food-img"></div>
+<h2 class="food-title">Pomegranate</h2>
+<span class="food-price">Rs.85</span>
+<ion-icon name="cart" class="add-cart"></ion-icon>
+</div>
+
+<div class="food-box" data-item="milkshake">
+<div class="pic"><img src="./images/caramel milkshake.jpg" class="food-img"></div>
+<h2 class="food-title">Caramel Milkshake</h2>
+<span class="food-price">Rs.120</span>
+<ion-icon name="cart" class="add-cart"></ion-icon>
+</div>
+  
+</div>
+</div>
+  <script src="./script/script.js"></script>
+</body>
+</html>
